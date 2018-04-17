@@ -66,7 +66,7 @@ public class Customer {
 	}
 
 	@Column(nullable = false)
-	@ApiModelProperty(notes = "Customer Phone Number", allowEmptyValue = false, required = true)
+	@ApiModelProperty(notes = "Customer Phone Number, Accepting only valid israeli numbers.", allowEmptyValue = false, required = true)
 	public String getPhoneNumber() {
 		return this.phoneNumber;
 	}

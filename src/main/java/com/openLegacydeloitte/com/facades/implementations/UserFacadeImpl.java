@@ -20,7 +20,7 @@ import com.openLegacydeloitte.com.validation.ValidationChecklist;
 /**
  * Service class for customer management. <br>
  * Ties in the business logic of application users.<br>
- * Commincates with DAO layer and validation logic.
+ * Communicates with DAO layer and validation logic.
  */
 @Service
 public class UserFacadeImpl implements UserFacade {

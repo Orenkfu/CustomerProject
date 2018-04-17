@@ -33,7 +33,7 @@ public class UserResource {
 	private static final String DEFAULTPG = "0";
 	private static final String DEFAULTPGSIZE = "10";
 
-	UserFacade facade;
+	private UserFacade facade;
 
 	@Autowired
 	public void setFacade(UserFacade facade) {
@@ -126,7 +126,7 @@ public class UserResource {
 	@ExceptionHandler
 	@ResponseStatus(code = HttpStatus.INTERNAL_SERVER_ERROR)
 	public Message handleException(Exception e) {
-		e.printStackTrace();
+		// e.printStackTrace();
 		String message = e.getMessage();
 		if (message == null) {
 			message = "A technical error has occurred.";
